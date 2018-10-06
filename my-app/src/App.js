@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import './App.css';
 import List from './List'
+import Increment from './Increment';
+import Api from './Api';
+import TestLife from './TestLife';
 
 export default class App extends Component {
   constructor(props) {
@@ -33,6 +36,9 @@ export default class App extends Component {
           <button>Submit</button>
         </form>
         <List item={this.state.items}/>
+        <Increment></Increment>
+        <Api></Api>
+        <TestLife></TestLife>
       </div>
     );
   }
